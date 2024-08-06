@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -sd "\t\n" | tr "\t" ":" |  cut -d: -f1
+awk 'NR % 2 == 1'
